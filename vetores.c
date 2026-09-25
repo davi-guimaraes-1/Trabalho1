@@ -4,7 +4,7 @@ int davi(void){
 int gustavo(void) {
   printf("Gostoso");
 }
-int henrique{
+int henrique(void){
   printf("To ficando maluco");
-return penis;
+  return penis;
 }
