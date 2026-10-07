@@ -11,7 +11,7 @@ int interval(int array[], ki, kj); //9 - Retorna a quantidade de valores entre o
 int nbigger(int array[], n); //10 - Retorna o maior valor a partir de uma posição N
 int nsmaller(int array[], n); //11 - Retorna o menor valor a partir de uma posição N
 void swap(int array[], int p1, int p2); //12 - Realiza a permuta entre 2 valores do vetor
-void copy(int array[], int copy[]) //13 - Copia o vetor para outro
-void paste(int array[], int copy[]) //14 - Cola o vetor auxiliar no vetor principal
-void sort(int array[]) //15 - Organiza o vetor em ordem crescente
+void copy(int array[], int copy[]); //13 - Copia o vetor para outro
+void paste(int array[], int copy[]); //14 - Cola o vetor auxiliar no vetor principal
+void sort(int array[]); //15 - Organiza o vetor em ordem crescente
 void credits(); //16 - Exibe os créditos da aplicação
