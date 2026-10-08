@@ -20,7 +20,7 @@ void print(int array[]) { //2 - Imprime o vetor
   
   printf("\nVetor = [");
   for (i = 0; i < 10; i++) {
-    printf("%d", array[i]);
+    printf("  %d  ", array[i]);
   }
   printf("]\n\n");
 }
