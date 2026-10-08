@@ -8,7 +8,7 @@
 int main(int argc, char *argv[]) {
 	int array[10];
 	int copy[10];
-	int state, i = 0;
+	int state, i = 0, m, pose, value, ki, kj, p1, p2;
 
 	setlocale(LC_ALL, "Portuguese"); // Só pra poder ter acento
 	
@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 		
 		switch (state) {
 			case 0:
-				printf("\n%d ações executadas."\n);
+				printf("\n%d ações executadas.\n");
 				stop(); // void stop(); //0 - Encerra
 				continue;
 			case 1:
@@ -68,13 +68,13 @@ int main(int argc, char *argv[]) {
 				average(array); // float average(int array[]); //8 - Retorna a média dos valores do vetor
 				continue;
 			case 9:
-				interval(array); // int interval(int array[], ki, kj); //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
+				interval(array, ki, kj); // int interval(int array[], ki, kj); //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
 				continue;
 			case 10:
-				nbigger(array); // int nbigger(int array[], n); //10 - Retorna o maior valor a partir de uma posição N
+				nbigger(array, n); // int nbigger(int array[], n); //10 - Retorna o maior valor a partir de uma posição N
 				continue;
 			case 11:
-				nsmaller(array); // int nsmaller(int array[], n); //11 - Retorna o menor valor a partir de uma posição N
+				nsmaller(array, n); // int nsmaller(int array[], n); //11 - Retorna o menor valor a partir de uma posição N
 				continue;
 			case 12:
 				swap(array, p1, p2); // void swap(int array[], int p1, int p2); //12 - Realiza a permuta entre 2 valores do vetor
