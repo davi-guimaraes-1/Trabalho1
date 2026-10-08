@@ -55,11 +55,11 @@ float average(int array[]) { //8 - Retorna a média dos valores do vetor
   printf("Não está pronto ainda!");
 }
 
-int interval(int array[], ki, kj) { //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
+int interval(int array[], int ki, int kj) { //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
   printf("Não está pronto ainda!");
 }
 
-int nbigger(int array[], n) { //10 - Retorna a posição do maior valor a partir de uma posição N
+int nbigger(int array[], int n) { //10 - Retorna a posição do maior valor a partir de uma posição N
   int i, m = n;
 
   for (i = n; i < 10; i++) {
@@ -69,7 +69,7 @@ int nbigger(int array[], n) { //10 - Retorna a posição do maior valor a partir
   return m;
 }
 
-int nsmaller(int array[], n) { //11 - Retorna a posição do menor valor a partir de uma posição N
+int nsmaller(int array[], int n) { //11 - Retorna a posição do menor valor a partir de uma posição N
   int i, m = n;
 
   for (i = n; i < 10; i++) {
