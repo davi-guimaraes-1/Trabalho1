@@ -38,11 +38,13 @@ int main(int argc, char *argv[]) {
 		"********************************************************************************************\n\n");
 		scanf("%d", &state);
 		
+		i++;
+		
 		switch (state) {
 			case 0:
-				printf("\n%d ações executadas.\n");
+				printf("\n%d ações executadas.\n", i);
 				stop(); // void stop(); //0 - Encerra
-				continue;
+				break;
 			case 1:
 				init(array); // void init(int array[]); //1  - Cria o vetor
 				continue;
@@ -95,7 +97,6 @@ int main(int argc, char *argv[]) {
 				printf("Número inválido!");
 				continue;
 		} 
-		i++;
 	} while (state != 0);	
 	return 0;
 }
