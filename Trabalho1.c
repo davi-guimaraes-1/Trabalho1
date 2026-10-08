@@ -8,11 +8,11 @@
 int main(int argc, char *argv[]) {
 	int array[10];
 	int copy[10];
-	int state, i = 0, m, pose, value, ki, kj, p1, p2;
+	int state, i = 0, m, n, pose, value, ki, kj, p1, p2;
 
 	setlocale(LC_ALL, "Portuguese"); // Só pra poder ter acento
 	
-	while(1) {
+	do {
 		printf("***********************************************************************************************\n\n"
 
 		"0 - SAIR DA APLICAÇÃO\n"
@@ -94,8 +94,8 @@ int main(int argc, char *argv[]) {
 			default:
 				printf("Número inválido!");
 				continue;
-		}
+		} 
 		i++;
-	}	
+	} while (state != 0);	
 	return 0;
 }
