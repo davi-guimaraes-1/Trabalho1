@@ -10,7 +10,7 @@ void init(int array[]) { //1  - Cria o vetor
 
   for (i = 0; i < 10; i++) {
     printf("\nInforme o valor para a posição %d: ", i);
-    scanf("%d", array[1]);
+    scanf("%d", &array[i]);
   }
   printf("\nVetor criado!\n\n");
 }
