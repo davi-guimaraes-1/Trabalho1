@@ -66,9 +66,9 @@ void smaller(int array[]) { //7 - Imprime o menor valor do vetor
 } 
 
 float average(int array[]) { //8 - Retorna a média dos valores do vetor
-  //Henrique(coidado)
+  //Henrique(cuidado)
 	int i, soma = 0;
-	int media;
+	float media;
 	for(i=0;i<10,i++){
 	soma += array[i];
 	}
