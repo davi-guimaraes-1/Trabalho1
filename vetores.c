@@ -26,11 +26,15 @@ void print(int array[]) { //2 - Imprime o vetor
 }
 
 void print_inverse(int array[]) { //3 - Imprime o vetor ao contrário
-  printf("Não está pronto ainda!");
+//Henrique
+int tam, i; 
+tam = strlen(array[]);
+for(i=tam; i > 0; i--){
+  printf("%d", &array[i]);
 }
 
 void print_unit(int array[], int pose) { //4 - Imprime um valor específico do vetor
-  printf("Não está pronto ainda!");
+  //Henrique
 }
 
 void change(int array[], int pose, int value) { //5 - Troca um valor do vetor
