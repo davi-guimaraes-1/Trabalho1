@@ -38,7 +38,7 @@ void print_inverse(int array[]) { //3 - Imprime o vetor ao contrário
 void print_unit(int array[], int pose) { //4 - Imprime um valor específico do vetor
   //Henrique
   int i;
-  for(i=0; i < 9; i++){
+  for(i=0; i < 10; i++){
   	if(i == pose){
     	printf("\n\nO numero %d esta presente na posição %d do vetor\n\n", array[i], i);
   	}
@@ -69,7 +69,7 @@ float average(int array[]) { //8 - Retorna a média dos valores do vetor
   //Henrique(coidado)
 	int i, soma = 0;
 	int media;
-	for(i=0;i<9,i++){
+	for(i=0;i<10,i++){
 	soma += array[i];
 	}
 media = soma / 10;
