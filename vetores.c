@@ -36,7 +36,7 @@ void print_unit(int array[], int pose) { //4 - Imprime um valor específico do v
   //Henrique
   for(i=0; i < 9; i++){
   if(i == pose){
-    printf("O numero %d esta presente na posição %d do vetor" array[i], i);
+    printf("\n\nO numero %d esta presente na posição %d do vetor\n\n", array[i], i);
   }
   }
 }
