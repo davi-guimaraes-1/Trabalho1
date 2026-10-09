@@ -27,14 +27,18 @@ void print(int array[]) { //2 - Imprime o vetor
 
 void print_inverse(int array[]) { //3 - Imprime o vetor ao contrário
 //Henrique
-int tam, i; 
-tam = strlen(array[]);
-for(i=tam; i > 0; i--){
-  printf("%d", &array[i]);
+int i; 
+for(i=9; i >= 0; i--){
+  printf("| %d |", array[i]);
 }
-
+}
 void print_unit(int array[], int pose) { //4 - Imprime um valor específico do vetor
   //Henrique
+  for(i=0; i < 9; i++){
+  if(i == pose){
+    printf("O numero %d esta presente na posição %d do vetor" array[i], i);
+  }
+  }
 }
 
 void change(int array[], int pose, int value) { //5 - Troca um valor do vetor
