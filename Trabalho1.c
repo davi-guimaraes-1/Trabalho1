@@ -8,7 +8,7 @@
 int main(int argc, char *argv[]) {
 	int array[10];
 	int copy[10];
-	int state, i = 0, m, n, pose, value, ki, kj, p1, p2;
+	int state, i = 0, m, n, pose, value, ki, kj, p1, p2, start = 0;
 
 	setlocale(LC_ALL, "Portuguese"); // Só pra poder ter acento
 	
@@ -42,12 +42,14 @@ int main(int argc, char *argv[]) {
 		
 		switch (state) {
 			case 0:
-				printf("\n%d ações executadas.\n", i);
-				stop(); // void stop(); //0 - Encerra
+				stop(i); // void stop(); //0 - Encerra
+				i--;
 				break;
 			case 1:
 				init(array); // void init(int array[]); //1  - Cria o vetor
+				start = 1;
 				continue;
+			if (start == 1) {
 			case 2:
 				print(array); // void print(int array[]); //2 - Imprime o vetor
 				continue;
@@ -108,12 +110,19 @@ int main(int argc, char *argv[]) {
 			case 15:
 				sort(array);// void sort(int array[]); //15 - Organiza o vetor em ordem crescente
 				continue;
+			}
 			case 16:
 				credits(); // void credits(); //16 - Exibe os créditos da aplicação
 				continue;
 			default:
-				printf("Número inválido!");
+				if (start == 1) {
+					printf("Número inválido!");
+				} else {
+					printf("Você deve criar o vetor!");
+				}
+				i--;
 				continue;
+				
 		} 
 	} while (state != 0);	
 	return 0;
