@@ -26,18 +26,22 @@ void print(int array[]) { //2 - Imprime o vetor
 }
 
 void print_inverse(int array[]) { //3 - Imprime o vetor ao contrário
-//Henrique
-int i; 
-for(i=9; i >= 0; i--){
-  printf("| %d |", array[i]);
+	//Henrique
+	int i;
+	printf("\nVetor = [");
+	for(i=9; i >= 0; i--){
+  		printf("  %d  ", array[i]);
+	}
+	printf("]\n\n");
 }
-}
+
 void print_unit(int array[], int pose) { //4 - Imprime um valor específico do vetor
   //Henrique
+  int i;
   for(i=0; i < 9; i++){
-  if(i == pose){
-    printf("\n\nO numero %d esta presente na posição %d do vetor\n\n", array[i], i);
-  }
+  	if(i == pose){
+    	printf("\n\nO numero %d esta presente na posição %d do vetor\n\n", array[i], i);
+  	}
   }
 }
 
@@ -101,8 +105,8 @@ void copy(int array[], int copy[]) { //13 - Copia o vetor para outro
   } 
 }
 
-void paste(int array[], int copy[]) { //14 - Cola o vetor auxiliar no vetor principal
-  copy(copy, array);
+void paste(int array[], int array2[]) { //14 - Cola o vetor auxiliar no vetor principal
+  copy(array2, array);
 }
 
 void sort(int array[]) { //15 - Organiza o vetor em ordem crescente
