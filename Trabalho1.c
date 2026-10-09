@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]) {
 	int array[10];
-	int copy[10];
+	int array2[10];
 	int state, i = 0, m, n, pose, value, ki, kj, p1, p2, start = 0;
 
 	setlocale(LC_ALL, "Portuguese"); // Só pra poder ter acento
@@ -106,10 +106,10 @@ int main(int argc, char *argv[]) {
 				swap(array, p1, p2); // void swap(int array[], int p1, int p2); //12 - Realiza a permuta entre 2 valores do vetor
 				continue;
 			case 13:
-				copy(array, copy); // void copy(int array[], int copy[]); //13 - Copia o vetor para outro
+				copy(array, array2); // void copy(int array[], int copy[]); //13 - Copia o vetor para outro
 				continue;
 			case 14:
-				paste(array, copy);// void paste(int array[], int copy[]); //14 - Cola o vetor auxiliar no vetor principal
+				paste(array, array2);// void paste(int array[], int copy[]); //14 - Cola o vetor auxiliar no vetor principal
 				continue;
 			case 15:
 				sort(array);// void sort(int array[]); //15 - Organiza o vetor em ordem crescente
