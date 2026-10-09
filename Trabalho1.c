@@ -55,9 +55,15 @@ int main(int argc, char *argv[]) {
 				print_inverse(array); // void print_inverse(int array[]); //3 - Imprime o vetor ao contrário
 				continue;
 			case 4:
+				printf("Informe a posição: ");
+				scanf("%d", &pose);
 				print_unit(array, pose); // void print_unit(int array[], int pose); //4 - Imprime um valor específico do vetor
 				continue;
 			case 5:
+				printf("Informe a posição: ");
+				scanf("%d", &pose);
+				printf("Informe o novo valor: ");
+				scanf("%d", &value);
 				change(array, pose, value); // void change(int array[], int pose, int value); //5 - Troca um valor do vetor
 				continue;
 			case 6:
@@ -70,15 +76,27 @@ int main(int argc, char *argv[]) {
 				average(array); // float average(int array[]); //8 - Retorna a média dos valores do vetor
 				continue;
 			case 9:
+				printf("Informe o início do intervalo: ");
+				scanf("%d", &ki);
+				printf("Informe o fim do intervalo: ");
+				scanf("%d", &kj);
 				interval(array, ki, kj); // int interval(int array[], ki, kj); //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
 				continue;
 			case 10:
+				printf("Informe a posição: ");
+				scanf("%d", &n);
 				nbigger(array, n); // int nbigger(int array[], n); //10 - Retorna o maior valor a partir de uma posição N
 				continue;
 			case 11:
+				printf("Informe a posição: ");
+				scanf("%d", &n);
 				nsmaller(array, n); // int nsmaller(int array[], n); //11 - Retorna o menor valor a partir de uma posição N
 				continue;
 			case 12:
+				printf("Informe o primeiro valor: ");
+				scanf("%d", &p1);
+				printf("Informe o primeiro valor: ");
+				scanf("%d", &p2);
 				swap(array, p1, p2); // void swap(int array[], int p1, int p2); //12 - Realiza a permuta entre 2 valores do vetor
 				continue;
 			case 13:
