@@ -1,5 +1,5 @@
 void stop(); //0 - Encerra
-void init(int array[]); //1  - Cria o vetor
+void init(int array[], int i); //1  - Cria o vetor
 void print(int array[]); //2 - Imprime o vetor
 void print_inverse(int array[]); //3 - Imprime o vetor ao contrário
 void print_unit(int array[], int pose); //4 - Imprime um valor específico do vetor
