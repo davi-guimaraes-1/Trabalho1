@@ -66,7 +66,14 @@ void smaller(int array[]) { //7 - Imprime o menor valor do vetor
 } 
 
 float average(int array[]) { //8 - Retorna a média dos valores do vetor
-  printf("Não está pronto ainda!");
+  //Henrique(coidado)
+	int i, soma = 0;
+	int media;
+	for(i=0;i<9,i++){
+	soma += array[i];
+	}
+media = soma / 10;
+return media;
 }
 
 int interval(int array[], int ki, int kj) { //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
