@@ -75,24 +75,28 @@ int main(int argc, char *argv[]) {
 				smaller(array); // void smaller(int array[]); //7 - Imprime o menor valor do vetor
 				continue;
 			case 8:
-				average(array); // float average(int array[]); //8 - Retorna a média dos valores do vetor
+				m = average(array); // float average(int array[]); //8 - Retorna a média dos valores do vetor
+				printf("A média dos valores do vetor é: %d", m);
 				continue;
 			case 9:
 				printf("Informe o início do intervalo: ");
 				scanf("%d", &ki);
 				printf("Informe o fim do intervalo: ");
 				scanf("%d", &kj);
-				interval(array, ki, kj); // int interval(int array[], ki, kj); //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
+				m = interval(array, ki, kj); // int interval(int array[], ki, kj); //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
+				printf("Existem %d números entre o intervalo (%d, %d)", m, ki, kj);
 				continue;
 			case 10:
 				printf("Informe a posição: ");
 				scanf("%d", &n);
-				nbigger(array, n); // int nbigger(int array[], n); //10 - Retorna o maior valor a partir de uma posição N
+				m = nbigger(array, n); // int nbigger(int array[], n); //10 - Retorna o maior valor a partir de uma posição N
+				printf("O maior número a partir da posição %d é: %d", n, m);
 				continue;
 			case 11:
 				printf("Informe a posição: ");
 				scanf("%d", &n);
-				nsmaller(array, n); // int nsmaller(int array[], n); //11 - Retorna o menor valor a partir de uma posição N
+				m = nsmaller(array, n); // int nsmaller(int array[], n); //11 - Retorna o menor valor a partir de uma posição N
+				printf("O menor número a partir da posição %d é: %d", n, m);
 				continue;
 			case 12:
 				printf("Informe o primeiro valor: ");
