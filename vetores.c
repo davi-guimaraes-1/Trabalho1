@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "vetores.h"
 
-void stop() { //0 - Encerra
-  printf("Obrigado por utilizar este programa!");
+void stop(int i) { //0 - Encerra
+  printf("Quantidade de ações executadas: %d", i);
 }
 
 void init(int array[]) { //1  - Cria o vetor
