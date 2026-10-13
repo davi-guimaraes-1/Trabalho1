@@ -130,5 +130,5 @@ void sort(int array[]) { //15 - Organiza o vetor em ordem crescente
 }
 
 void credits() { //16 - Exibe os créditos da aplicação
-  printf("Não está pronto ainda!");
+  printf("\n\nAutores: \nDavi Guimarães Amorim \nGustavo Gomes Brzesky \nHenrique Paiva Pessin \n\nData de lançamento: 13/10/2026);
 }
