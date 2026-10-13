@@ -101,7 +101,15 @@ int nsmaller(int array[], int n) { //11 - Retorna a posição do menor valor a p
 }
 
 void swap(int array[], int p1, int p2) { //12 - Realiza a permuta entre 2 valores do vetor
-  printf("Não está pronto ainda!");
+  	int troca[3];
+	troca[1] = p1;
+	troca[2] = p2;
+	
+	troca[0] = array[troca[1]];
+	array[troca[1]] = array[troca[2]];
+	array[troca[2]] = troca[0];
+	
+	printf("\nTroca realizada!\n\n");
 }
 
 void copy(int array[], int copy[]) { //13 - Copia o vetor para outro
