@@ -54,7 +54,7 @@ void bigger(int array[]) { //6 - Imprime o maior valor do vetor
   
   m = nbigger(array, 0);
   
-  printf("\nMaior valor: %d\nPosição: %d", array[m], m);
+  printf("\nMaior valor: %d\nPosição: %d\n\n", array[m], m);
 }
 
 void smaller(int array[]) { //7 - Imprime o menor valor do vetor
@@ -62,17 +62,17 @@ void smaller(int array[]) { //7 - Imprime o menor valor do vetor
   
   m = nsmaller(array, 0);
   
-  printf("\nMaior valor: %d\nPosição: %d", array[m], m);
+  printf("\nMaior valor: %d\nPosição: %d\n\n", array[m], m);
 } 
 
 float average(int array[]) { //8 - Retorna a média dos valores do vetor
   //Henrique(cuidado)
 	int i, soma = 0;
 	float media;
-	for(i=0;i<10,i++){
-	soma += array[i];
+	for(i=0;i<10;i++){
+		soma += array[i];
 	}
-media = soma / 10;
+	media = soma / 10;
 return media;
 }
 
@@ -118,8 +118,6 @@ void swap(int array[], int p1, int p2) { //12 - Realiza a permuta entre 2 valore
 	troca[0] = array[troca[1]];
 	array[troca[1]] = array[troca[2]];
 	array[troca[2]] = troca[0];
-	
-	printf("\nTroca realizada!\n\n");
 }
 
 void copy(int array[], int copy[]) { //13 - Copia o vetor para outro
@@ -143,5 +141,5 @@ for(i=0;i<10;i++){
 }
 
 void credits() { //16 - Exibe os créditos da aplicação
-  printf("\n\nAutores: \nDavi Guimarães Amorim \nGustavo Gomes Brzesky \nHenrique Paiva Pessin \n\nData de lançamento: 13/10/2026);
+  printf("\n\nAutores: \nDavi Guimarães Amorim \nGustavo Gomes Brzesky \nHenrique Paiva Pessin \n\nData de lançamento: 13/10/2026\n\n");
 }
