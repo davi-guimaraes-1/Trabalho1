@@ -126,7 +126,10 @@ void paste(int array[], int array2[]) { //14 - Cola o vetor auxiliar no vetor pr
 
 void sort(int array[]) { //15 - Organiza o vetor em ordem crescente
   //Henrique
-	
+	int i;
+for(i=0;i<10;i++){
+	swap(array, i, nsmaller(array, i));
+	}
 }
 
 void credits() { //16 - Exibe os créditos da aplicação
