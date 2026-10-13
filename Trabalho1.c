@@ -3,8 +3,6 @@
 #include <locale.h>
 #include "vetores.h"
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
 int main(int argc, char *argv[]) {
 	int array[10];
 	int array2[10];
@@ -38,6 +36,11 @@ int main(int argc, char *argv[]) {
 		"********************************************************************************************\n\n");
 		scanf("%d", &state);
 		
+		if (start == 0 && state != 0 && state != 1 && state != 16) {
+			printf("\n\nVocê deve criar o vetor antes!\n\n");
+			continue;
+		}
+		
 		i++;
 		
 		switch (state) {
@@ -49,7 +52,6 @@ int main(int argc, char *argv[]) {
 				init(array); // void init(int array[]); //1  - Cria o vetor
 				start = 1;
 				continue;
-		if (start == 1) {
 			case 2:
 				print(array); // void print(int array[]); //2 - Imprime o vetor
 				continue;
@@ -76,7 +78,7 @@ int main(int argc, char *argv[]) {
 				continue;
 			case 8:
 				m = average(array); // float average(int array[]); //8 - Retorna a média dos valores do vetor
-				printf("A média dos valores do vetor é: %d", m);
+				printf("\nA média dos valores do vetor é: %d\n\n", m);
 				continue;
 			case 9:
 				printf("Informe o início do intervalo: ");
@@ -84,46 +86,45 @@ int main(int argc, char *argv[]) {
 				printf("Informe o fim do intervalo: ");
 				scanf("%d", &kj);
 				m = interval(array, ki, kj); // int interval(int array[], ki, kj); //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
-				printf("Existem %d números entre o intervalo (%d, %d)", m, ki, kj);
+				printf("\nExistem %d números entre o intervalo (%d, %d)\n\n", m, ki, kj);
 				continue;
 			case 10:
 				printf("Informe a posição: ");
 				scanf("%d", &n);
 				m = nbigger(array, n); // int nbigger(int array[], n); //10 - Retorna o maior valor a partir de uma posição N
-				printf("O maior número a partir da posição %d é: %d", n, m);
+				printf("O maior número a partir da posição %d é: %d", n, array[m]);
 				continue;
 			case 11:
 				printf("Informe a posição: ");
 				scanf("%d", &n);
 				m = nsmaller(array, n); // int nsmaller(int array[], n); //11 - Retorna o menor valor a partir de uma posição N
-				printf("O menor número a partir da posição %d é: %d", n, m);
+				printf("O menor número a partir da posição %d é: %d", n, array[m]);
 				continue;
 			case 12:
-				printf("Informe o primeiro valor: ");
+				printf("Informe a primeira posição: ");
 				scanf("%d", &p1);
-				printf("Informe o primeiro valor: ");
+				printf("Informe a segunda posição: ");
 				scanf("%d", &p2);
 				swap(array, p1, p2); // void swap(int array[], int p1, int p2); //12 - Realiza a permuta entre 2 valores do vetor
+				printf("\nTroca realizada!\n\n");
 				continue;
 			case 13:
 				copy(array, array2); // void copy(int array[], int copy[]); //13 - Copia o vetor para outro
+				printf("\nVetor copiado!\n\n");
 				continue;
 			case 14:
 				paste(array, array2);// void paste(int array[], int copy[]); //14 - Cola o vetor auxiliar no vetor principal
+				printf("\nVetor restaurado!\n\n");
 				continue;
 			case 15:
 				sort(array);// void sort(int array[]); //15 - Organiza o vetor em ordem crescente
+				printf("\n\nVetor ordenado!\n\n");
 				continue;
-		}
 			case 16:
 				credits(); // void credits(); //16 - Exibe os créditos da aplicação
 				continue;
 			default:
-				if (start == 1) {
-					printf("Número inválido!");
-				} else {
-					printf("Você deve criar o vetor!");
-				}
+				printf("\n\nNúmero inválido!\n\n");
 				i--;
 				continue;
 				
