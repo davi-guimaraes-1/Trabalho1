@@ -77,7 +77,17 @@ return media;
 }
 
 int interval(int array[], int ki, int kj) { //9 - Retorna a quantidade de valores entre o intervalo (ki, kj)
-  printf("Não está pronto ainda!");
+  	//Gustavo
+    int contador = 0;
+    int i;
+    
+    for (i = 0; i < 10; i++) {
+        // Verifica se o número está estritamente entre ki e kj
+        if (array[i] > ki && array[i] < kj) {
+            contador++;
+        }
+    }
+    return contador;
 }
 
 int nbigger(int array[], int n) { //10 - Retorna a posição do maior valor a partir de uma posição N
