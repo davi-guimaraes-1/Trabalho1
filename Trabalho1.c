@@ -42,14 +42,14 @@ int main(int argc, char *argv[]) {
 		
 		switch (state) {
 			case 0:
-				stop(i); // void stop(); //0 - Encerra
 				i--;
+				stop(i); // void stop(); //0 - Encerra
 				break;
 			case 1:
 				init(array); // void init(int array[]); //1  - Cria o vetor
 				start = 1;
 				continue;
-			if (start == 1) {
+		if (start == 1) {
 			case 2:
 				print(array); // void print(int array[]); //2 - Imprime o vetor
 				continue;
@@ -114,7 +114,7 @@ int main(int argc, char *argv[]) {
 			case 15:
 				sort(array);// void sort(int array[]); //15 - Organiza o vetor em ordem crescente
 				continue;
-			}
+		}
 			case 16:
 				credits(); // void credits(); //16 - Exibe os créditos da aplicação
 				continue;
