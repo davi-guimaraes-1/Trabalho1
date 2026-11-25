@@ -5,6 +5,8 @@ O trabalho consiste em criar um programa em C para fazer algumas operações sim
 
 **COMO RODAR:**
 1. Faça o download dos arquivos e os deixe numa página separada;
-2. Abra o arquivo Trabalho1.dev no Dev-C++;
-3. Compile e execute (F11) o arquivo Trabalho1.c;
-4. Pronto! você já está rodando o programa!
+2. Abra o arquivo Trabalho1.dev (que deve abrir o Dev-C++ na hora);
+3. Clique com o botão direito em cima do nome "Trabalho1.dev" e selecione a opção "Add to project";
+4. Adicione os arquivos "Trabalho1.c", "vetores.c" e "vetores.h" ao projeto;
+5. Compile e execute (F11) o arquivo Trabalho1.c;
+6. Pronto! você já está rodando o programa!
